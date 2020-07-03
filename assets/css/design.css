@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+body {
+	background: #ff0000;
+	color: #f0e8de;
+	font-family: 'Fira Code', monospace;
+	font-weight: 400;
+}
+
+#web-bg {
+	background: url("../img/bg.jpg");
+	background-repeat: repeat;
+	background-size: contain;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#me {
+	width: 80%;
+	height: auto;
+}
+
+.main {
+	z-index: 5;
+	width: 90%;
+	height: 90%;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 0.5vw solid #d11358;
+	font-size: 2vw;
+}
+
+.bar {
+	height: 5%;
+	width: 100%;
+	border-bottom: 0.5vw solid #d11358;
+}
+
+.content {
+	padding: 2vw;
+	height: 80%;
+	width: 95%;
+	overflow-y: scroll;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+table {
+	text-align: center;
+}
+
+.userHost {
+	color: #c8fa00;
+	font-weight: 600;
+}
+
+.current-directory {
+	color: #c24444;
+	font-weight: 600;
+}
+
+.colon {
+	font-weight: 600;
+}
+
+.general-text {
+	color: #ff0000;
+}
+
+.opt-text {
+	color: #ff0066;
+}
+
+.WHOIS-Actioner{
+	display: none;
+}
+
+.WHOIS-Further{
+	display: none;
+	transition: .25s ease;
+}
+
+.WHOIS-Actioner:checked ~ .WHOIS-Read .WHOIS-Further{
+	display: inline-block;
+	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
+}
+
+.WHOIS-Actioner ~ .WHOIS-ReadActioner:before{content:'[+] READ MORE [+]'}
+.WHOIS-Actioner:checked ~ .WHOIS-ReadActioner:before{content:'[-] READ LESS [-]'}
+
+#WHOIS-ReadActioner{
+	cursor: pointer;
+	display: block;
+}
+
+a {
+	color: #99c7e8;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #99c7e8;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #99c7e8;
+}
+
+.command-input {
+	animation: blink-animation 0.5s steps(5, start) infinite;
+	-webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+	to {
+		visibility: hidden;
+	}
+}
+
+@-webkit-keyframes blink-animation {
+	to {
+		visibility: hidden;
+	}
+}
