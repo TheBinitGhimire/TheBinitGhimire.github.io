@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    background-image: url(../img/terminalbg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #072540;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+main {
+    background-color: #072540;
+    height: 100vh;
+    max-width: 100%;
+    color: white;
+    display: flex;
+    margin: 18px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 18px;
+}
+
+.prompt {
+    color:#c8fa00;
+    font-weight: bolder;
+}
+
+input {
+    border: 0 hidden;
+    outline: none;
+    display: inline-flex;
+    appearance: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.systemOutput {
+    margin-top: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #d0b3ff;
+}
+
+ul {
+    margin-bottom: 0;
+}
+

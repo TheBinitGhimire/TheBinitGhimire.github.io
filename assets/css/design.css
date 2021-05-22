@@ -1,0 +1,434 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    background-image: url(../img/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #072540;
+    min-height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width: 768px){
+    body {
+        background-position: 25%;
+    }
+}
+
+main{
+    flex: 1 1 auto;
+    padding: 18px;
+    top: 0;
+    bottom: 0;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+a {
+    text-decoration: none !important;
+    color: white;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.winbox ul {
+    padding-left: 16px;
+}
+
+.winbox ul li {
+    padding-bottom: 15px;
+}
+
+.winbox ul li ul li {
+    padding-bottom: 0px;
+}
+
+
+.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.desktop-elements {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desktop-element {
+    padding-bottom: 24px;
+    flex: 50%;
+}
+
+.desktop-icon {
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(2px 2px 2px white);
+}
+
+.desktop-icon-name {
+    display: block;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.winbox a {
+    text-decoration: none;
+    color: #d0b3ff;
+}
+
+.elements-heading {
+    margin-bottom: 8px;
+}
+
+.start-menu-section {
+    position: relative;
+}
+
+.start-menu-section .start-menu-elements {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    position: fixed;
+    background-color: rgb(69, 27, 54);
+    color: white;
+    filter: drop-shadow(0px 0px 1px #000000);
+    bottom: 48px;
+    animation: fadeAppearance 1s;
+    -webkit-animation: fadeAppearance 1s;
+    -moz-animation: fadeAppearance 1s;
+    -o-animation: fadeAppearance 1s;
+    -ms-animation: fadeAppearance 1s;
+    z-index: 1;
+}
+
+@keyframes fadeAppearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeAppearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+  
+@-webkit-keyframes fadeAppearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+  
+@-o-keyframes fadeAppearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+  
+@-ms-keyframes fadeAppearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.start-col {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-basis: 100%;
+    flex: 0.2;
+}
+
+.start-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1.5;
+    font-size: 16px;
+    margin: 0 18px 16px 18px;
+}
+
+.start-menu-elements ul {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0;
+}
+
+.start-menu-elements .start-left ul li {
+    text-align: center;
+    border-width: 1px 2px 1px 0px;
+    border-style: groove;
+    border-color: transparent;
+    padding: 16px;
+}
+
+#start-left-title {
+    position: absolute;
+    top: 0;
+}
+
+.start-menu-elements .start-right ul li {
+    border-width: 0px 1px 0px 0px;
+    border-style: groove;
+    border-color: transparent;
+    padding: 12px 8px;
+}
+
+.start-menu-elements ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.start-menu-elements ul li:hover:not(#start-left-title, #start-right-title) {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.my-profile {
+    display: inline-block;
+    content: url(../img/desktop/about.png);
+    width: 24px;
+    border-radius: 50%;
+}
+
+.up-arrow-section {
+    position: relative;
+}
+
+.up-arrow-section .up-arrow-elements {
+    display: none;
+    flex-wrap: wrap;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(69, 27, 54);
+    filter: drop-shadow(0px 0px 1px #000000);
+    color: white;
+    bottom: 48px;
+    right: 5%;
+    width: 30vh;
+    z-index: 1;
+}
+  
+.up-arrow-elements>div {
+    padding: 8px 8px 8px 8px;
+    flex: 1 1 25%;
+}
+
+.message-box-section {
+    position: relative;
+}
+
+.message-box-section .message-box-elements {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(69, 27, 54);
+    filter: drop-shadow(0px 0px 2px #000000);
+    color: white;
+    right: 0;
+    top: 0;
+    bottom: 48px;
+    animation: slideAppearance 0.5s;
+    -webkit-animation: slideAppearance 0.5s;
+    -moz-animation: slideAppearance 0.5s;
+    -o-animation: slideAppearance 0.5s;
+    -ms-animation: slideAppearance 0.5s;
+}
+
+@keyframes slideAppearance {
+    0% {right: -100%; opacity: 0;}
+    100% {right: 0; opacity: 1;}
+}
+
+@-moz-keyframes slideAppearance {
+    0% {right: -100%; opacity: 0;}
+    100% {right: 0; opacity: 1;}
+}
+  
+@-webkit-keyframes slideAppearance {
+    0% {right: -100%; opacity: 0;}
+    100% {right: 0; opacity: 1;}
+}
+  
+@-o-keyframes slideAppearance {
+    0% {right: -100%; opacity: 0;}
+    100% {right: 0; opacity: 1;}
+}
+  
+@-ms-keyframes slideAppearance {
+    0% {right: -100%; opacity: 0;}
+    100% {right: 0; opacity: 1;}
+}
+
+.message-box-container {
+    padding: 16px;
+    text-align: center;
+}
+
+.message-box-header {
+    margin-bottom: 16px;
+}
+
+.message-box-body {
+    margin-bottom: 16px;
+}
+
+.notifications {
+    padding: 4px 0;
+    border: 1px groove rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.notifications:hover {    
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.notifications-header {
+    padding-bottom: 4px;
+    border-bottom: 1px ridge rgba(255, 255, 255, 0.1);
+}
+
+.notifications-body {
+    padding: 8px 8px;
+}
+
+.clipboard-contents {
+    width: 1%;
+    word-wrap: break-word;
+}
+
+.screenShareDesign {
+    font-weight: bolder;
+    text-align: center;
+}
+
+#screenShareVideo {
+    margin-top: 18px;
+    width: 100%;
+    height: 60vh;
+}
+
+#screenShareLogs {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+footer {
+    position: fixed;
+    z-index: 0;
+    display: block;
+    background: -webkit-linear-gradient(left, rgb(69, 27, 54) 0%, rgb(83, 34, 36) 100%);
+    background: -o-linear-gradient(left, rgb(69, 27, 54) 0%, rgb(83, 34, 36) 100%);
+    background: -ms-linear-gradient(left, rgb(69, 27, 54) 0%, rgb(83, 34, 36) 100%);
+    background: -moz-linear-gradient(left, rgb(69, 27, 54) 0%, rgb(83, 34, 36) 100%);
+    background: linear-gradient(to right, rgb(69, 27, 54) 0%, rgb(83, 34, 36) 100%);
+    bottom: 0;
+    width: 100%;
+}
+
+.taskbar a {
+    text-align: center;
+}
+
+.taskbar a:hover:not(.start-menu-elements a) {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.taskbar-left {
+    font-size: 18px;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+}
+
+.taskbar-left a {
+    padding: 10px 16px 10px 16px;
+    height: 100%;
+    margin: 0 1px;
+}
+
+#start-menu-icon:hover {
+    color: #ff5e5e;
+}
+
+.taskbar-right {
+    font-size: 18px;
+    float: right;
+    height: 100%;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.taskbar-right a {
+    padding: 10px 8px 10px 8px;
+    height: 100%;
+}
+
+#current-timestamp {
+    display: table-cell;
+    font-size: 11px;
+}
+
+#current-time, #current-date {
+    display: table-row;
+}
+
+a#grip {
+    height: 100%;
+    margin-left: 8px;
+    padding-right: 1px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.elements {
+    display: none;
+}
+
+.desktopElementsDesign > .wb-body {
+    padding: 0 16px 0 16px;
+    background-color: #072540;
+    color: white;
+}
+
+.powerOffDesign > .wb-body, .powerOffDesign > .wb-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #072540;
+    color: white;
+}
+
+.screenShareDesign > .wb-body {
+    padding: 18px;
+    background-color: #072540;
+    color: white;
+}
