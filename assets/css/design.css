@@ -408,6 +408,19 @@ a#grip {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+@media only screen and (max-width: 384px) {
+    .taskbar-left, .taskbar-right {font-size: 2.5vh;}
+    .taskbar-left a {
+        padding: 8px 12px 8px 12px;
+    }
+    .taskbar-right a {
+        padding: 8px 6px 8px 6px;
+    }
+    #current-timestamp {
+        font-size: 1.5vh;
+    }
+}
+
 .elements {
     display: none;
 }
