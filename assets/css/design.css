@@ -395,6 +395,7 @@ footer {
 #current-timestamp {
     display: table-cell;
     font-size: 11px;
+    white-space: nowrap;
 }
 
 #current-time, #current-date {
