@@ -12,7 +12,7 @@ body {
     display: flex;
     max-width: 100%;
     flex-direction: column;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -213,7 +213,7 @@ img {
 
 .my-profile {
     display: inline-block;
-    content: url(../img/desktop/about.png);
+    content: url(../img/desktop/about.webp);
     width: 24px;
     border-radius: 50%;
 }
